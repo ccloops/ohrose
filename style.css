@@ -1,0 +1,68 @@
+* {
+  font-family: Bungee Shade;
+}
+body {
+  background-color: black;
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  color: cornsilk;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 50%
+}
+
+hr {
+  height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+
+nav {
+  margin: 20px;
+  padding: 10px;
+}
+
+nav ul {
+  margin: 0 auto;
+}
+
+nav li {
+  border: 2px solid red;
+  display: inline;
+  margin-bottom: 20px;
+  background-color: red;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav li:hover {
+  background-color: cornsilk;
+  text-decoration: none;
+}
+
+main>p {
+  margin: 0 auto;
+  width: 500px;
+  color: cornsilk;
+  border: 2px dashed red;
+  font-family: helvetica;
+}
+
+main>ul {
+  margin: 0 auto;
+  width: 500px;
+  color: cornsilk;
+  border: 2px dashed red;
+}
+
+main>li {
+  color: cornsilk;
+}
