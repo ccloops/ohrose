@@ -1,6 +1,7 @@
 * {
   font-family: Bungee Shade;
   text-align: center;
+  list-style-type: none;
 }
 body {
   background-color: black;
@@ -13,8 +14,6 @@ header {
   color: cornsilk;
   margin-bottom: 10px;
   text-align: center;
-  /*border: 3px solid white;
-  border-radius: 50%*/
 }
 
 header>h1 {
@@ -24,6 +23,8 @@ header>h1 {
   letter-spacing: 14px;
   text-indent: 38px;
   font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 hr {
@@ -37,10 +38,13 @@ nav {
   padding: 10px;*/
   margin: 0px 0px 50px 0px;
   font-family: baskerville, serif;
+  list-style-type: none;
+
 }
 
 nav ul {
   margin: 0 auto;
+  list-style-type: none;
 }
 
 nav li {
@@ -49,16 +53,19 @@ nav li {
   margin-bottom: 20px;
   background-color: red;
   padding: 20px;
+  list-style-type: none;
 }
 
 a {
   text-decoration: none;
   color: black;
+  list-style-type: none;
 }
 
 nav li:hover {
   background-color: cornsilk;
   text-decoration: none;
+  list-style-type: none;
 }
 
 main {
@@ -67,14 +74,15 @@ main {
 }
 
 main>img {
-  margin-top: 30px;
+  margin-top: 0px;
+
 }
 
 main>p {
   margin: 0 auto;
   width: 500px;
   color: cornsilk;
-  border: 2px dashed red;
+  /*border: 2px dashed red;*/
   font-family: helvetica;
 }
 
@@ -82,7 +90,7 @@ main>ul {
   margin: 0 auto;
   /*width: 500px;*/
   color: cornsilk;
-  border: 2px dashed red;
+  /*border: 2px dashed red;*/
   display: inline;
   text-align: center;
 }
@@ -103,7 +111,10 @@ input[type=text], select, textarea {
    box-sizing: border-box; /* Make sure that padding and width stays in place */
    margin-top: 6px; /* Add a top margin */
    margin-bottom: 16px; /* Bottom margin */
-   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+   font-family: baskerville;
+   font-size: 20px; 
+
 }
 
 /* Style the submit button with a specific background color etc */
