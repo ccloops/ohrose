@@ -23,8 +23,7 @@ header>h1 {
   letter-spacing: 14px;
   text-indent: 38px;
   font-style: italic;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 8px 0;
 }
 
 hr {
@@ -113,7 +112,7 @@ input[type=text], select, textarea {
    margin-bottom: 16px; /* Bottom margin */
    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
    font-family: baskerville;
-   font-size: 20px; 
+   font-size: 20px;
 
 }
 
@@ -137,4 +136,9 @@ input[type=submit]:hover {
    border-radius: 5px;
    background-color: #f2f2f2;
    padding: 20px;
+}
+
+#nav_bar .active {
+    color: #F8F8F8;
+    background-color: #4f81bd;
 }
