@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Oh, Rose" />
     <!-- <meta property="og:type" content="video.movie" /> -->
     <meta property="og:url" content="https://ohrose.bandcamp.com/" />
     <meta property="og:image" content="https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/21762665_1679065558784057_3933919130687146990_o.jpg?oh=c37f4903b70907cf63f87da15b25ce8f&oe=5A6482D5" />
     <meta property="og:description"
-  content="Oh, Rose is from Olympia, WA
-and maybe
-a town near you." />
+  content="Oh, Rose is from Olympia, WA and maybe a town near you." />
+
+  <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
+
     <link rel="shortcut icon" type="image/png" href="images/faviconit/oh-rose.ico">
     <link rel="shortcut icon" href="/oh-rose.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="/oh-rose.ico">
@@ -40,7 +44,19 @@ a town near you." />
       <h1 class = "header">Oh, Rose</h1>
     </header>
 
-    <nav>
+    <!-- <nav class="main-nav">
+
+     <ul class="icon-menu">
+       <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
+       <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
+       <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
+       <li><a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a></li>
+     </ul>
+   </nav> -->
+
+
+    <nav class="main-nav">
+      <div class="icon-menu">
       <ul>
         <a href = 'index.html'><li>home</li></a>
         <a href = 'html/music.html'><li>music</li></a>
@@ -48,9 +64,12 @@ a town near you." />
         <a href = 'html/schedule.html'><li>schedule</li></a>
         <a href = 'html/contact.html'><li>contact</li></a>
       </ul>
+    </div>
     </nav>
     <main>
-      <img src="images/ohrose.jpg" alt="">
+        <img src="images/ohrose.jpg" id="desktopimage" alt="">
+
+      <!-- <img src="images/tattoos.jpg" id="mobileimage" alt=""> -->
       <ul>
         <li><a href="https://www.instagram.com/ohroseh/" target="blank">Instagram</li>
         <li><a href="https://www.facebook.com/ohrosemusic/" target="blank">Facebook</li>

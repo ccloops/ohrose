@@ -5,14 +5,37 @@
 }
 body {
   background-color: black;
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
-  border: 3px solid red;
+}
+
+.icon-menu:before {
+  font-size: 4em;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: cornsilk;
+}
+
+.icon-menu li {
+  display: none;
+  list-style: none;
+  color: white;
+  position: relative;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  border-bottom: solid 1px lightgray;
+  margin: 0 0.5em 0 0.2em;
+  padding: 0.7em 0;
+}
+
+.main-nav:hover .icon-menu li {
+  display: block;
 }
 
 header {
   color: cornsilk;
-  margin-bottom: 10px;
+  /*margin-bottom: 0 20px;*/
   text-align: center;
 }
 
@@ -23,27 +46,18 @@ header>h1 {
   letter-spacing: 14px;
   text-indent: 38px;
   font-style: italic;
-  margin-top: 8px 0;
-}
-
-hr {
-  height: 6px;
-	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
-    border: 0;
+  margin: 20px 0;
 }
 
 nav {
-  /*margin: 20px;
-  padding: 10px;*/
   margin: 0px 0px 50px 0px;
   font-family: baskerville, serif;
   list-style-type: none;
 
 }
 
-nav ul {
+.main-nav ul {
   margin: 0 auto;
-  list-style-type: none;
 }
 
 nav li {
@@ -58,7 +72,6 @@ nav li {
 a {
   text-decoration: none;
   color: black;
-  list-style-type: none;
 }
 
 nav li:hover {
@@ -72,9 +85,15 @@ main {
   font-family: baskerville;
 }
 
-main>img {
-  margin-top: 0px;
+/*.main-image {
+  width: 350px;
+  height: auto;
+}*/
 
+#desktopimage {
+  margin-top: 0px;
+  object-fit: contain;
+  width: 100%;
 }
 
 main>p {
@@ -118,7 +137,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-   background-color: #4CAF50;
+   background-color: red;
    color: white;
    padding: 12px 20px;
    border: none;
@@ -128,7 +147,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-   background-color: #45a049;
+   background-color: red;
 }
 
 /* Add a background color and some padding around the form */
@@ -146,4 +165,159 @@ input[type=submit]:hover {
 footer {
   font-family: baskerville;
   font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .icon-menu:before {
+   display: none;
+ }
+  * {
+    font-family: Bungee Shade;
+    text-align: center;
+    list-style-type: none;
+  }
+  body {
+    background-color: black;
+    width: 960px;
+    margin: 0 auto;
+    border: 3px solid red;
+  }
+
+  header {
+    color: cornsilk;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  header>h1 {
+    font-size: 7vw;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 14px;
+    text-indent: 38px;
+    font-style: italic;
+    margin-top: 8px 0;
+  }
+
+  hr {
+    height: 6px;
+  	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+      border: 0;
+  }
+
+  nav {
+    /*margin: 20px;
+    padding: 10px;*/
+    margin: 0px 0px 50px 0px;
+    font-family: baskerville, serif;
+    list-style-type: none;
+
+  }
+
+  nav ul {
+    margin: 0 auto;
+    list-style-type: none;
+  }
+
+  nav li {
+    border: 2px solid red;
+    display: inline;
+    margin-bottom: 20px;
+    background-color: red;
+    padding: 20px;
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+  }
+
+  nav li:hover {
+    background-color: cornsilk;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  main {
+    background-color: cornsilk;
+    font-family: baskerville;
+  }
+
+  #desktopimage {
+    margin-top: 0px;
+    object-fit: contain;
+  }
+
+  main>p {
+    margin: 0 auto;
+    width: 500px;
+    color: cornsilk;
+    /*border: 2px dashed red;*/
+    font-family: helvetica;
+  }
+
+  main>ul {
+    margin: 0 auto;
+    /*width: 500px;*/
+    color: cornsilk;
+    /*border: 2px dashed red;*/
+    display: inline;
+    text-align: center;
+  }
+
+  main>li {
+    background-color: white;
+    color: white;
+    border: 2px solid red;
+    list-style-type: none;
+  }
+
+  /* Style inputs with type="text", select elements and textareas */
+  input[type=text], select, textarea {
+     width: 100%; /* Full width */
+     padding: 12px; /* Some padding */
+     border: 1px solid #ccc; /* Gray border */
+     border-radius: 4px; /* Rounded borders */
+     box-sizing: border-box; /* Make sure that padding and width stays in place */
+     margin-top: 6px; /* Add a top margin */
+     margin-bottom: 16px; /* Bottom margin */
+     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+     font-family: baskerville;
+     font-size: 20px;
+
+  }
+
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+     background-color: #4CAF50;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+  }
+
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+     background-color: #45a049;
+  }
+
+  /* Add a background color and some padding around the form */
+  .container {
+     border-radius: 5px;
+     background-color: #f2f2f2;
+     padding: 20px;
+  }
+
+  #nav_bar .active {
+      color: #F8F8F8;
+      background-color: #4f81bd;
+  }
+
+  footer {
+    font-family: baskerville;
+    font-size: 20px;
+  }
 }
