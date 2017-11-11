@@ -142,3 +142,8 @@ input[type=submit]:hover {
     color: #F8F8F8;
     background-color: #4f81bd;
 }
+
+footer {
+  font-family: baskerville;
+  font-size: 20px;
+}
