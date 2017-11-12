@@ -8,3 +8,7 @@ $(function(){
     }
   });
 });
+
+$('.icon-menu').on('click', function() {
+  $('#nav-items').show();
+})
